@@ -266,13 +266,6 @@ font-weight: bold;
 
 }
 
-
-.container .container_footer{
-
-
-
-}
-
 .container .container_footer .form{
 
 margin-left: 494px;
@@ -283,7 +276,6 @@ width: 891px;
 .container .container_footer .form>h2{
 
 margin-top: 196px;
-text-transform: uppercase;
 color: #263244;
 font-size: 32px;
 font-weight: bold;
@@ -325,3 +317,238 @@ color: #263244;
 margin-left: 880px;
 
 }
+
+
+.container .container_footer .{
+
+text-align: center;
+
+}
+.container .container_footer .statistic{
+margin-top: 189px;
+background: url("../img/фон3.png") center/cover no-repeat ;
+width: 100%;
+text-align: center;
+}
+
+
+.container .container_footer .statistic h2{
+	padding-top: 105px;
+text-transform: uppercase;
+color: #263244;
+font-size: 32px;
+font-weight: bold;
+text-align: center;
+
+}
+.container .container_footer .statistic .cherta{
+margin-top: 33px;
+margin-bottom: 88px;
+
+}
+
+
+
+.container .container_footer .statistic .content_stat{ display:inline-block;
+width: 160px;
+text-align: center;
+margin-left: 43px;
+margin-right: 43px;
+margin-bottom: 92px;
+vertical-align: top;
+}
+.container .container_footer .statistic .content_stat img{ 
+
+margin-bottom: 34px;
+}
+
+.container .container_footer .statistic .content_stat h4{ 
+
+
+
+font-size: 22px;
+text-align: center;
+	font-weight: bold;
+color: #263244;
+margin-bottom: 30px;
+}
+
+
+.container .container_footer .statistic .content_stat p{ 
+
+
+
+font-size: 12px;
+text-align: center;
+	font-weight: bold;
+color: #263244;
+margin-bottom: 30px;
+}
+
+.container .container_footer .OTZOV{
+margin-top: 108px;
+width: 100%;
+text-align: center;
+}
+
+
+.container .container_footer .OTZOV h2{
+	padding-top: 104px;
+text-transform: uppercase;
+color: #263244;
+font-size: 32px;
+font-weight: bold;
+text-align: center;
+
+}
+
+
+
+.container .container_footer .OTZOV .content_OTZOV p{
+text-align: center;
+	margin-top: 37px;
+	margin-left: 607px;
+	width: 698px;
+}
+
+.container .container_footer .OTZOV  .cherta{
+margin-top: 36px;
+margin-bottom: 60px;
+
+}
+
+
+
+
+
+
+.container .container_footer .OTZOV .content_OTZOV   img{
+	margin-top: 49px;
+margin-right: 16px;
+
+}
+footer{
+    
+    margin-top: 90px;
+   background: #354051;
+	width: 100%;
+	text-align: center;
+	color: #ffffff;
+}
+
+.footter_content .contact{ 
+ 
+
+background: url("../img/Фон1.png") 50% 65%/auto 150% no-repeat ;
+
+ }
+
+.footter_content .contact h2{
+
+	padding-top: 104px;
+text-transform: uppercase;
+color: #ffffff;
+font-size: 32px;
+font-weight: bold;
+text-align: center;
+
+
+ }
+
+.footter_content .contact .cherta{
+margin-top: 32px;
+margin-bottom: 32px;
+
+}
+
+.footter_content .contact .text{
+width: 600px;
+	margin-left: 620px;
+}
+
+.footter_content .contact .content_contact{ display:inline-block;
+vertical-align: top;
+
+margin-right: 85px;
+    margin-top: 50px;
+margin-bottom: 37px;
+}
+
+
+
+
+.footter_content .contact .content_contact img{ 
+    margin-bottom: 17px;
+
+}
+
+
+.footter_content .contact .FORM_FOOTER h3 { 
+    margin-bottom: 43px;
+padding-top: 104px;
+text-transform: uppercase;
+color: #ffffff;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+}
+
+
+
+.footter_content .contact .FORM_FOOTER .pole { 
+  width: 357px;
+  height: 36px;
+  margin-right: 29px;
+  margin-bottom: 15px;
+  background:rgba(210,214,220, 0.8);
+}
+
+.footter_content .contact .FORM_FOOTER textarea { 
+  width: calc(357px + 357px + 29px);
+  height: 97px;
+  margin-right: 29px;
+  margin-bottom: 27px;
+     background:rgba(210,214,220, 0.8);
+}
+
+
+
+.footter_content .contact .FORM_FOOTER .but{
+
+	height: 42px;
+	text-align: center;
+	background: none;
+	border: solid 2px #ffffff;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 0px 16px;
+	  margin-top: 28px;
+	   margin-bottom: 75px; 
+	font-size: 16px;
+}
+
+
+
+
+
+.footter_content .contact .SOC_SETI .SOC{ display:inline-block;
+vertical-align: top;
+
+margin-right: 55px;
+margin-bottom: 63px; 
+
+}
+
+
+ .footter_content .map { 
+
+ 	background: url("../img/Карта.png") 10% 50% no-repeat;
+ 	width: 100%;
+
+height: 351px;}
+
+
+.footter_content .info{ 
+margin-top: 38px;
+margin-bottom: 30px;
+ }
