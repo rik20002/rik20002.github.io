@@ -4,12 +4,72 @@ font-family: Arial, sans-serif ;
 
 }
 
+
+@keyframes title_anime {
+from{
+	opacity: 0;
+	margin-top: -100px;
+}
+to{
+
+opacity: 1;
+margin-top: 97px;
+}
+
+}
+
+@keyframes coming {
+from{
+opacity: 0;
+}
+to{
+opacity: 1;
+
+}
+
+}
+
+
+
+@keyframes menu_anime {
+from{
+	opacity: 0;
+	margin-top: -80px;
+}
+to{
+
+opacity: 1;
+margin-top: 0px;
+}
+
+}
+
+
+
+@keyframes main_anime {
+from{
+	opacity: 0;
+	margin-left: -500px;
+}
+to{
+
+opacity: 1;
+margin-left: 404px;
+}
+
+}
+
+
+
+
 nav{
 width: 100%;
 height: 60px;
 background: #344051;
-
+position: fixed;
 }
+
+
 
 
 .logo{
@@ -19,6 +79,9 @@ font-size: 28px;
 line-height: 60px;
 margin-left: 388px;
 float: left;
+-webkit-animation:coming 2s ease;
+-o-animation: coming 2s ease;
+ animation:coming 2s ease;
 }
 
 
@@ -35,12 +98,70 @@ line-height: 60px;
 float: left;
 margin-right: 40px;
 text-transform: uppercase;
+-webkit-animation:menu_anime 0.4s ease forwards;
+-o-animation: menu_anime 0.4s ease forwards;
+ animation:menu_anime 0.4s ease forwards;
+ opacity: 0;
 }
+.menu li:nth-child(2){
+animation-delay: 0.4s;
+
+
+}
+
+.menu li:nth-child(3){
+animation-delay: 0.8s;
+
+
+}
+.menu li:nth-child(4){
+animation-delay: 1.2s;
+
+
+}
+.menu li:nth-child(5){
+animation-delay: 1.6s;
+
+
+}
+.menu li:nth-child(6){
+animation-delay: 2.0s;
+
+
+}
+.menu li a{
+transition: all 0.1s;
+color: #ffffff;
+
+transform: scale(1.0);
+display: inline-block;
+}
+
+.menu li a:visited{
+font-weight: bold;
+color: #ffffff;
+}
+
+.menu li a:hover{
+font-weight: bold;
+color: #f39a25;
+transform: scale(1.1);
+}
+
+main{
+
+	width: 100%;
+	height: 100% ;
+
+
+}
+
+
 
 .main{
 
 	width: 100%;
-	height: calc(100% - 60px) ;
+	height: calc(100% + 60px);
 	background: url("../img/fon4.png") 90% 100%/auto 85% no-repeat,url("../img/fon.jpg") center/cover no-repeat ;
 }
 .title_container{
@@ -49,6 +170,13 @@ float: left;
 margin: 432px 0px 0px 404px ;
 color:  #2c384a;
 text-align: center;
+ opacity: 0;
+-webkit-animation:main_anime 3s ease forwards;
+-o-animation: main_anime 3s ease forwards;
+ animation: main_anime 3s ease forwards;
+ -webkit-animation-delay: 2s;
+ -o-animation-delay: 2s;
+ animation-delay: 2s;
 }
 .title_container h1{
 font-size: 60px;
@@ -70,6 +198,22 @@ color: #79818d;
 	border-radius: 5px;
 	padding: 0px 16px;
 	margin: 58px 14px 0px 14px;
+	transition: all 0.2s;
+	display: inline-block;
+	transform: scale(1.0);
+}
+
+
+.title_container input:hover{
+
+	background: #344051;
+	color: #ffffff;
+	font-weight: bold;
+}
+.title_container input:active{
+
+	transform: scale(1.1);
+	font-weight: bold;
 	
 }
 
@@ -80,13 +224,35 @@ width: 100%;
 
 }
 
+
+
+
 .container .container_title{
 text-align: center;
 margin-left: 596px;
 margin-top: 97px;
 width: 732px;
-margin-bottom: 98px;	
+margin-bottom: 98px;
+opacity: 0;
+-webkit-animation:title_anime 3s ease forwards;
+-o-animation: title_anime 3s ease forwards;
+ animation: title_anime 3s ease forwards;
+ -webkit-animation-delay: 4s;
+ -o-animation-delay: 4s;
+ animation-delay: 4s;
+
+
 }
+
+@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 1px rgba(0,0,0,0.5); }
+  100% { bottom: 50px; box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+font-weight: bold;
+
+
+   }
+}
+
 .container .container_title input{
 height: 42px;
 	text-align: center;
@@ -96,7 +262,25 @@ height: 42px;
 	border-radius: 5px;
 	padding: 0px 16px;
 	margin: 58px 14px 0px 14px;
+	transition: all 0.2s;
+	display: inline-block;
+	transform: scale(1.0);
+	 animation: bouncing 1s cubic-bezier(0.1,0.25,0.1,1) 1s infinite alternate both; 
 	
+}
+.container .container_title input:hover{
+background: #344051;
+	color: #ffffff;
+	font-weight: bold;
+	animation-play-state: paused; 
+
+}
+.container .container_title input:active{
+background: #344051;
+	color: #ffffff;
+	font-weight: bold;
+	animation-play-state: paused; 
+
 }
 
 
@@ -106,6 +290,9 @@ color: #263244;
 font-size: 32px;
 font-weight: bold;
 }
+
+
+
 
 .container .container_title .cherta{
 margin-top: 33px;
@@ -119,10 +306,32 @@ margin-bottom: 22px;
 }
 
 
+@keyframes container_body {
+from{
+	opacity: 0;
+	margin-left: +1500px;
+}
+to{
+
+opacity: 1;
+margin-left: 0px;
+}
+
+}
+
+
+
 .container .container_body{
 background: url("../img/fon_2.png") center/cover no-repeat ;
 text-align: center;
 width: 100%;
+opacity: 0;
+-webkit-animation:container_body 3s ease forwards;
+-o-animation: container_body 3s ease forwards;
+ animation: container_body 3s ease forwards;
+ -webkit-animation-delay: 10s;
+ -o-animation-delay: 10s;
+ animation-delay: 10s;
 }
 
 .container .container_body .content {
@@ -166,12 +375,85 @@ margin-bottom: 35px;
 }
 
 
+
+
+.container .loader {
+	margin-left: 50%;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; 
+  animation: spin 2s linear infinite;
+
+ 
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); 
+
+-webkit-animation-delay: 2s;
+ -o-animation-delay: 2s;
+ animation-delay: 2s;
+-webkit-animation:spin_close 1s ease forwards;
+-o-animation: spin_close 1s ease forwards;
+ animation: spin_close 1s ease forwards;
+
+}
+
+
+  }
+
+
+@keyframes spin_close {
+ from{
+
+
+   
+opacity: 1;
+}
+to{
+opacity: 0;
+
+}
+}
+
+@keyframes container_slider {
+from{
+	opacity: 0;
+	margin-left: -1500px;
+}
+to{
+
+opacity: 1;
+margin-left: auto;
+}
+
+}
+
+
 .container .container_slider{
 
 
 	text-align: center;
+	opacity: 0;
+	-webkit-animation:container_slider 5s ease forwards;
+-o-animation: container_slider 5s ease forwards;
+ animation: container_slider 5s ease forwards;
+ -webkit-animation-delay: 15s;
+ -o-animation-delay: 15s;
+ animation-delay: 15s;
+ 
 
 }
+
+
+
+
 
 .container .container_slider .slider_title h2{
 	padding-top: 107px;
@@ -255,6 +537,23 @@ text-align: center;
 
 
 
+
+.container .container_slider .content_slider1>input:hover{
+background: #344051;
+	color: #ffffff;
+	font-weight: bold;
+	animation-play-state: paused; 
+
+}
+.container .container_slider .content_slider1>input:active{
+background: #344051;
+	color: #ffffff;
+	font-weight: bold;
+	animation-play-state: paused; 
+
+}
+
+
 .container .container_slider .content_slider2>h2{
 
 
@@ -303,6 +602,35 @@ background: #eeeeee;
 margin-bottom: 45px;
 }
 
+
+.container .container_footer .form select:hover{
+
+
+
+background: #ffffff;
+border: 1px solid #bdbdbd;;
+}
+
+
+.container .container_footer .form select:active{
+
+
+
+background: #212529;
+border: 1px solid #bdbdbd;;
+}
+
+
+.container .container_footer .form select:focus{
+
+
+
+background: #ffffff;
+border: 1px solid #bdbdbd;;
+}
+
+
+
 .container .container_footer .form div{ display:inline-block;
 font-size: 20px;
 font-weight: bold;
@@ -329,6 +657,10 @@ margin-top: 189px;
 background: url("../img/фон3.png") center/cover no-repeat ;
 width: 100%;
 text-align: center;
+background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -385,10 +717,34 @@ color: #263244;
 margin-bottom: 30px;
 }
 
+@keyframes OTZOV {
+from{
+	opacity: 0;
+	margin-left: -500px;
+}
+to{
+
+opacity: 1;
+margin-left: auto;
+}
+
+}
+
+
+
+
+
 .container .container_footer .OTZOV{
 margin-top: 108px;
 width: 100%;
 text-align: center;
+opacity: 0;
+	-webkit-animation:container_slider 5s ease forwards;
+-o-animation: container_slider 5s ease forwards;
+ animation: container_slider 5s ease forwards;
+ -webkit-animation-delay: 10s;
+ -o-animation-delay: 10s;
+ animation-delay: 10s;
 }
 
 
@@ -427,13 +783,38 @@ margin-bottom: 60px;
 margin-right: 16px;
 
 }
+
+
+
+
+
+@keyframes OTZOV {
+from{
+	opacity: 0;
+	margin-top: -100px;
+}
+to{
+
+opacity: 1;
+margin-top: 90px;
+}
+
+}
+
+
 footer{
-    
+    opacity: 0;
     margin-top: 90px;
    background: #354051;
 	width: 100%;
 	text-align: center;
 	color: #ffffff;
+	-webkit-animation:container_slider 5s ease forwards;
+-o-animation: container_slider 5s ease forwards;
+ animation: container_slider 5s ease forwards;
+ -webkit-animation-delay: 25s;
+ -o-animation-delay: 25s;
+ animation-delay: 25s;
 }
 
 .footter_content .contact{ 
@@ -527,6 +908,22 @@ text-align: center;
 	font-size: 16px;
 }
 
+.footter_content .contact .FORM_FOOTER .but:hover{
+background: #ffffff;
+	color: #344051;
+	font-weight: bold;
+	animation: bouncing 1s cubic-bezier(0.1,0.25,0.1,1) 1s infinite alternate both; 
+	animation-play-state: paused; 
+
+}
+.footter_content .contact .FORM_FOOTER .but:active{
+background:#ffffff ;
+	color: #344051;
+	font-weight: bold;
+	animation: bouncing 1s cubic-bezier(0.1,0.25,0.1,1) 1s infinite alternate both; 
+	animation-play-state: paused; 
+
+}
 
 
 

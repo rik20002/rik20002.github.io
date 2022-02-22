@@ -15,24 +15,26 @@
  <nav>
  <div class="logo">Андрей Браум</div>
  <div class="menu"><ul>
-<li>Обо мне</li>
-<li>Услуги</li>
-<li>Кейсы</li>
-<li>Прайс</li>
-<li>Отзывы</li>
-<li>Контакты</li>
+<li><a href="#">Обо мне</a></li>
+<li><a href="#"> Услуги</a></li>
+<li><a href="#">Кейсы</a></li>
+<li><a href="#">Прайс</a></li>
+<li><a href="#">Отзывы</a></li>
+<li><a href="#">Контакты</a></li>
  </ul>
  </div>
  </nav> 
 </header>
-<div class="main">
+<main>
+<section class="main">
 <div class="title_container">
   <h1> Привет <br> Я Андрей Браум</h1>
   <h4> Фулл стек веб-разработчик и Android-разработчик</h4>
-  <input type="submit" value="Обо мне">
-  <input type="submit" value="Мои работы">  
+  <input type="button" value="Обо мне">
+  <input  type="button" value="Мои работы">  
 </div>
-</div>
+</section>
+
 <div class="container">
 <div class="container_title">
   <h2>Обо мне</h2>
@@ -91,7 +93,10 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-</div><br><br>
+</div>
+
+<div class="loader"></div>
+
 <div class="container_slider">
 <div class="slider_title">
 <h2>КЕЙСЫ</h2>
@@ -103,6 +108,8 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
+
+
 <div class="slider">
 <img src="img/фотка.png" alt="Слайдер" width="1174" height="594" />
 </div><br>
@@ -199,8 +206,11 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
 </div> 
 </div>
 </div>  
-
+<div class="loader"></div>
 <footer>
+
+
+  
   <div class="footter_content">
   <div class="contact">
 <h2>МОИ КОНТАКТЫ</h2>
@@ -224,9 +234,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <div class="FORM_FOOTER">
 <h3>ОСТАВТЕ МНЕ СООБЩЕНИЕ </h3>
 <form action="#" method="post">
-    <input class="pole" type="text" name="NIK" id="nik" value="Имя" tabindex="1" />
-    <input class="pole" type="text" name="Mail" id="mail" value="Email" tabindex="1" /><br>
-    <textarea cols="40" rows="8" name="textarea" id="textarea" ></textarea><br>
+    <input class="pole" type="text" name="NIK" id="nik" value="Имя" tabindex="1"  required />
+    <input class="pole" type="email" name="Mail" id="mail" value="Email" tabindex="1" required/><br>
+    <textarea cols="40" rows="8" name="textarea" id="textarea" required></textarea><br>
     <input class="but" type="submit" value="Отправить" />
 </form>
 </div>
@@ -265,6 +275,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
    </div>
   <br>
+
     </footer>
+      </main>
 </body>
 </html>
