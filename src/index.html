@@ -8,34 +8,85 @@
     <meta property="og:title" content="Это моя первая страница...">
     <title>Андрей Браум - веб разработчик</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script  src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
  <header>
- <nav>
- <div class="logo">Андрей Браум</div>
- <div class="menu"><ul>
-<li><a href="#">Обо мне</a></li>
-<li><a href="#"> Услуги</a></li>
-<li><a href="#">Кейсы</a></li>
-<li><a href="#">Прайс</a></li>
-<li><a href="#">Отзывы</a></li>
-<li><a href="#">Контакты</a></li>
- </ul>
- </div>
- </nav> 
+     <nav>
+   <div class="container">
+    <div class="row">
+      <div class="px-0 col-xxl-2 col-xl-3 col-lg-3 col-7" >
+        <div class="logo">Андрей Браум</div>
+      </div>
+
+      <div class="px-0 col-xxl-6 offset-xxl-4 col-xl-7 offset-xl-2 col-lg-8 offset-lg-1 d-none d-lg-block">
+        <div class="menu"><ul>
+       <li><a href="#">Обо мне</a></li>
+       <li><a href="#"> Услуги</a></li>
+       <li><a href="#">Кейсы</a></li>
+        <li><a href="#">Прайс</a></li>
+          <li><a href="#">Отзывы</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+
+      </div>
+       </div>
+      <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+   
+    <div class="dropdown">
+       <a class="btn btn-secondary btn-close1" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        X
+        </a>
+
+       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <li><a class="dropdown-item" href="#">Обо мне</a></li>
+     <li><a class="dropdown-item" href="#"> Услуги</a></li>
+      <li><a class="dropdown-item" href="#">Кейсы</a></li>
+     <li><a class="dropdown-item" href="#">Прайс</a></li>
+         <li><a class="dropdown-item" href="#">Отзывы</a></li>
+         <li><a class="dropdown-item" href="#">Контакты</a></li>
+       </ul>
+    </div>
+
+      </div>
+
+
+       </div>
+
+     </div>
+ 
+ 
+   </nav> 
 </header>
+
+
+
+
 <main>
 <section class="main">
-<div class="title_container">
+  <div class="container h-100">
+   <div class="row align-items-center h-100">
+     <div class="col-lg-6 mt-5 pt-5">
+       <div class="title_container  mt-5 pt-5">
   <h1> Привет <br> Я Андрей Браум</h1>
   <h4> Фулл стек веб-разработчик и Android-разработчик</h4>
   <input type="button" value="Обо мне">
   <input  type="button" value="Мои работы">  
-</div>
-</section>
+    </div>
+      </div>
+     </div> 
+      </div>
 
-<div class="container">
+   <main></main>
+ </section>
+
+
+
+
+
+<div class="container1">
 <div class="container_title">
   <h2>Обо мне</h2>
   <img class="cherta" src="img/cherta.png" alt="Фото" /><br>
@@ -277,6 +328,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <br>
 
     </footer>
-      </main>
+
+          </main>
+
 </body>
 </html>
