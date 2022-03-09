@@ -109,7 +109,7 @@ adv=site.param3[1];
 
 
 
-}else if(diz==="2"){
+}else if(ad==="2"){
 
 ads=site.param3[2];
 adv=site.param3[3];
