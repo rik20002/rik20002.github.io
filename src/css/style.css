@@ -159,6 +159,12 @@ color: #f39a25;
 transform: scale(1.1);
 }
 
+.menu #top-menu li.active a{
+font-weight: bold;
+color: #f39a25;
+transform: scale(1.1);
+}
+
 main{
 
 	width: 100%;
@@ -282,9 +288,9 @@ opacity: 0;
 -webkit-animation:title_anime 3s ease forwards;
 -o-animation: title_anime 3s ease forwards;
  animation: title_anime 3s ease forwards;
- -webkit-animation-delay: 4s;
+ /*-webkit-animation-delay: 4s;
  -o-animation-delay: 4s;
- animation-delay: 4s;
+ animation-delay: 4s;*/
 
 }
 
@@ -373,9 +379,9 @@ opacity: 0;
 -webkit-animation:container_body 3s ease forwards;
 -o-animation: container_body 3s ease forwards;
  animation: container_body 3s ease forwards;
- -webkit-animation-delay: 10s;
+/* -webkit-animation-delay: 10s;
  -o-animation-delay: 10s;
- animation-delay: 10s;
+ animation-delay: 10s;*/
 }
 
 .container1 .container_body .content {
@@ -483,14 +489,14 @@ margin-left: auto;
 .container1 .container_slider{
 
 
-	text-align: center;
+	
 	opacity: 0;
 	-webkit-animation:container_slider 5s ease forwards;
 -o-animation: container_slider 5s ease forwards;
  animation: container_slider 5s ease forwards;
- -webkit-animation-delay: 15s;
+/* -webkit-animation-delay: 15s;
  -o-animation-delay: 15s;
- animation-delay: 15s;
+ animation-delay: 15s;*/
 }
 
 
@@ -510,7 +516,7 @@ text-align: center;
 .container1 .container_slider .slider_title .cherta{
 margin-top: 33px;
 margin-bottom: 35px;
-
+margin-left: 48%;
 }
 
 .container1 .container_slider .slider_title>p{
@@ -521,21 +527,99 @@ text-align: center;
 
 }
 
-.container1 .container_slider .slider img{
+.container1 .container_slider .slider {
 width: 90%;	
 height:  90%;	
+position: relative;
 margin-left: 2%;
 margin-top: 42px;
-text-align: center;
+    margin: auto;
 }
 @media(min-width:  1000px){
-.container1 .container_slider .slider img{
-width: 50%;	
-height:  50%;
-margin-left: 2%;
+.container1 .container_slider .slider {
+position: relative;
+    width: 50%;
+    height: 50%;
+margin-top: 42px;
+    margin: auto;
 }
 
 }
+
+
+
+/* Картинка мастабируется по отношению к родительскому элементу */
+.container1 .container_slider .slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Кнопки вперед и назад */
+.container1 .container_slider .slider .prev, 
+.container1 .container_slider .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    text-decoration: none;
+}
+
+
+.container1 .container_slider .slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* При наведении на кнопки добавляем фон кнопок */
+
+.container1 .container_slider .slider .prev:hover,
+.container1 .container_slider .slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+/* Кружочки */
+
+.container1 .container_slider .slider-dots {
+  text-align: center;
+ 
+}
+
+.container1 .container_slider .slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+   
+}
+
+.container1 .container_slider .active,
+.container1 .container_slider .slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+
+
+
+
+
 
 
 .container1 .container_slider .content_slider{
@@ -652,16 +736,39 @@ text-align: center;
 
 }
 
+#okno_hr{
+
+text-transform: uppercase;
+width: 200px;
+background: #63b5ae;
+color:  #ffffff;
+font-size: 18px;
+font-weight: bold;
+border-radius: 5px;
+text-align: center;
+margin-left: 10px;
+text-decoration: none;
+padding: 20px;
+
+}
 
 
 
-.container1 .container_slider  .content_slider.content_slider1>input:hover{
+
+
+.container1 .container_slider  .content_slider.content_slider1>input :hover{
 background: #344051;
 	color: #ffffff;
 	font-weight: bold;
 	animation-play-state: paused; 
 
 }
+
+
+
+
+
+
 .container1 .container_slider  .content_slider .content_slider1>input:active{
 background: #344051;
 	color: #ffffff;
@@ -669,6 +776,26 @@ background: #344051;
 	animation-play-state: paused; 
 
 }
+
+
+
+#okno_hr:hover{
+background: #344051;
+	color: #ffffff;
+	font-weight: bold;
+	animation-play-state: paused; 
+
+}
+
+
+ #okno_hr:active{
+background: #344051;
+	color: #ffffff;
+	font-weight: bold;
+	animation-play-state: paused; 
+
+}
+
 
 
 .container1 .container_slider  .content_slider .content_slider2>h2{
@@ -864,7 +991,7 @@ width: 45%;
 
 .container1 .container_footer .{
 
-text-align: center;
+
 
 }
 .container1 .container_footer .statistic{
@@ -950,17 +1077,17 @@ margin-left: auto;
 
 
 .container1 .container_footer .OTZOV{
-margin-top: 108px;
-width: 50%;
-margin-left: 25%;
+margin-top: 98px;
+
+margin-left: 2%;
 text-align: center;
 opacity: 0;
 	-webkit-animation:OTZOV 5s ease forwards;
 -o-animation: OTZOV 5s ease forwards;
  animation: OTZOV 5s ease forwards;
- -webkit-animation-delay: 10s;
+/* -webkit-animation-delay: 10s;
  -o-animation-delay: 10s;
- animation-delay: 10s;
+ animation-delay: 10s;*/
 }
 
 
@@ -991,13 +1118,50 @@ margin-bottom: 60px;
 
 
 
-
-
-.container1 .container_footer .OTZOV .content_OTZOV   img{
-	margin-top: 49px;
-margin-right: 16px;
-
+/* Собственно сам слайдер */
+.container1 .container_footer .OTZOV  .slider1{
+   
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 130px;
+    margin: auto;
 }
+/* Картинка мастабируется по отношению к родительскому элементу */
+.container1 .container_footer .OTZOV  .slider1 .item1 img {
+    object-fit: cover;
+    
+}
+
+.container1 .container_footer .OTZOV  .slider-dots1 {
+  text-align: center;
+ 
+}
+
+.container1 .container_footer .OTZOV  .slider-dots_item1{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+   
+}
+
+.container1 .container_footer .OTZOV  .active1,
+.container1 .container_footer .OTZOV  .slider-dots_item1:hover {
+    background-color: #f39a25;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1018,18 +1182,12 @@ margin-top: 80px;
 
 
 footer{
-    opacity: 0;
+    
     margin-top: 90px;
    background: #354051;
 	width: 100%;
 	text-align: center;
 	color: #ffffff;
--webkit-animation:container_slider 5s ease forwards;
--o-animation: container_slider 5s ease forwards;
- animation: container_slider 5s ease forwards;
- -webkit-animation-delay: 25s;
- -o-animation-delay: 25s;
- animation-delay: 25s;
 }
 
 .footter_content .contact{ 
