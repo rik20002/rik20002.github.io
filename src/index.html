@@ -7,29 +7,31 @@
     <meta name="robots" content="all">
     <meta property="og:title" content="Это моя первая страница...">
     <title>Андрей Браум - веб разработчик</title>
-    <script type="text/javascript" src="js/script.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/modal_okno.css">
     <script  src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 <body>
- <header>
+ <header id="wrap_okno" class=" wrap_okno okno_pading">
      <nav>
-   <div class="container">
+   <div class="container head_okno">
     <div class="row">
       <div class="px-0 col-xxl-2 col-xl-3 col-lg-3 col-7" >
         <div class="logo">Андрей Браум</div>
       </div>
 
       <div class="px-0 col-xxl-6 offset-xxl-4 col-xl-7 offset-xl-2 col-lg-8 offset-lg-1 d-none d-lg-block">
-        <div class="menu"><ul>
-       <li><a href="#">Обо мне</a></li>
-       <li><a href="#"> Услуги</a></li>
-       <li><a href="#">Кейсы</a></li>
-        <li><a href="#">Прайс</a></li>
-          <li><a href="#">Отзывы</a></li>
-      <li><a href="#">Контакты</a></li>
+        <div class="menu"><ul id="top-menu">
+       <li><a href="#im">Обо мне</a></li>
+       <li><a href="#uslugi"> Услуги</a></li>
+       <li><a href="#works">Кейсы</a></li>
+        <li><a href="#prays">Прайс</a></li>
+          <li><a href="#reput">Отзывы</a></li>
+      <li><a href="#contakt">Контакты</a></li>
     </ul>
 
       </div>
@@ -79,8 +81,6 @@
       </div>
      </div> 
       </div>
-
-   <main></main>
  </section>
 
 
@@ -88,7 +88,9 @@
 
 
 <div class="container1">
-<div class="container_title">
+
+<div class="container_title " id="im">
+
   <h2>Обо мне</h2>
   <img class="cherta" src="img/cherta.png" alt="Фото" /><br>
     <img class="Foto_tl" src="img/foto.png" alt="Фото" /><br>
@@ -106,7 +108,7 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><br>
 <input type="submit" value="Скачать резюме">
 </div>
-<div class="container_body">
+<div class="container_body" id="uslugi">
 <h2>ЧТО Я УМЕЮ</h2>
 <img class="cherta" src="img/cherta.png" alt="Фото" /><br>
 <div class="content">
@@ -146,10 +148,10 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
 </div>
-
+ 
 <div class="loader"></div>
 
-<div class="container_slider">
+<div class="container_slider" id="works">
 <div class="slider_title">
 <h2>КЕЙСЫ</h2>
 <img class="cherta" src="img/cherta.png" alt="Фото" /><br>
@@ -163,7 +165,76 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
 <div class="slider">
-<img src="img/фотка.png" alt="Слайдер" width="1174" height="594" />
+    <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/фотка.png" alt="Первый слайд"></a>
+        
+    </div>
+
+    <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/slide1.jpg" alt="Второй слайд"></a>
+        
+    </div>
+
+    <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/slide2.jpg" alt="Третий слайд"></a>
+        
+    </div>
+  <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/фотка.png" alt="Первый слайд"></a>
+        
+    </div>
+  <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/slide3.jpg" alt="Первый слайд"></a>
+      
+    </div>
+  <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/slide4.jpg" alt="Первый слайд"></a>
+       
+    </div>
+  <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/фотка.png" alt="Первый слайд"></a>
+   
+    </div>
+  <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/slide1.jpg" alt="Первый слайд"></a>
+        
+    </div>
+  <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/фотка.png" alt="Первый слайд"></a>
+        
+    </div>
+  <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/slide1.jpg" alt="Первый слайд"></a>
+       
+    </div>
+  <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/slide1.jpg" alt="Первый слайд"></a>
+       
+    </div>
+
+  <div class="item">
+        <a href="#okno" class="okno_link"><img src="img/фотка.png" alt="Первый слайд"></a>
+        
+    </div>
+    <a class="prev" onclick="minusSlide()"><</a>
+    <a class="next" onclick="plusSlide()">></a>
+</div>
+<br>
+
+<div class="slider-dots">
+  <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+  <span class="slider-dots_item" onclick="currentSlide(4)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(5)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(6)"></span> 
+  <span class="slider-dots_item" onclick="currentSlide(7)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(8)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(9)"></span> 
+  <span class="slider-dots_item" onclick="currentSlide(10)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(11)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(12)"></span> 
+  
 </div><br>
 <div class="content_slider">
 <div class="content_slider1">
@@ -184,36 +255,35 @@ consequat. </p></div>
 <br>
 <br>
 <div class="container_footer">
- <div class="form">
+ <div class="form" id="prays">
    <h2>Расчёт стоимости</h2>
 <form action="#" method="post">
   <h3><label for="select-choice"> ТИП САЙТА</label></h3>
     <select name="select-choice" id="select-choice">
       <option value=""> Выберите значение...</option>
-      <option value="Choice 1"> Choice 1</option>
-      <option value="Choice 2"> Choice 2</option>
-      <option value="Choice 3"> Choice 3</option>
+      <option value="1">Сайт визитка</option>
+      <option value="2">Многостраничный сайт</option>
+      <option value="3">Онлайн магазин</option>
     </select>
    <h3> <label for="select-choice1"> ДИЗАИН</label></h3>
     <select name="select-choice1" id="select-choice1">
          <option value=""> Выберите значение...</option>
-      <option value="Choice 1"> Choice 1</option>
-      <option value="Choice 2"> Choice 2</option>
-      <option value="Choice 3"> Choice 3</option>
+      <option value="1">Простой дизай</option>
+      <option value="2">Шаблонный дизай</option>
+      <option value="3">Уникальный дизаин</option>
     </select>
      <h3> <label for="select-choice2">АДАПТИВНОСТЬ</label> </h3>
     <select name="select-choice2" id="select-choice2">
          <option value=""> Выберите значение...</option>
-      <option value="Choice 1"> Choice 1</option>
-      <option value="Choice 2"> Choice 2</option>
-      <option value="Choice 3"> Choice 3</option>
-    </select>
+      <option value="1">Есть</option>
+      <option value="2">Нет</option>
+   </select>
 </form>
 <div class="stoimost_content">
 <div class="srokn">Сроки</div>
-<div class="srok1">0</div><br>
+<div class="srok1" id="srok1">0</div><br>
 <div class="stoimost">Стоимость</div>
-<div class="srok2">0</div>
+<div class="srok2" id="srok2">0</div>
 </div>
  </div>
 <br>
@@ -223,48 +293,136 @@ consequat. </p></div>
   <img class="cherta" src="img/cherta.png" alt="Фото" /><br>
 <div class="content_stat">
 <img src="img/смайл.png" alt="Фото" />
-<h4>120</h4>
+<h4 id="like">120</h4>
 <p>CЧАСТЛИВЫХ КЛИЕНТОВ</p></div>
 
 <div class="content_stat">
 <img src="img/скобки.png"" alt="Фото" />
-<h4>4,600</h4>
+<h4 id="worki">4,600</h4>
 <p>ЧАСОВ РАБОТЫ</p></div>
 <div class="content_stat">
 <img src="img/галочка.png" alt="Фото" />
-<h4>340</h4>
+<h4 id="project">340</h4>
 <p>ПРОЕКТОВ ЗАВЕРШЕНО</p></div>
 <div class="content_stat">
 <img src="img/кубок.png" alt="Фото" />
-<h4>23</h4>
+<h4 id="medal">23</h4>
 <p>ПОЛУЧЕНО НАГРАД</p></div>
     </div>
-<div class="OTZOV">
+<div class="OTZOV" id="reput">
   <h2>ОТЗОВЫ</h2>
   <img class="cherta" src="img/cherta.png" alt="Фото" /><br>
-  <div class="content_OTZOV">
-<img src="img/фотка2.png" alt="Фото" /><br>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  
+
+<div class="slider1">
+    <div class="item1">
+       <img src="img/фотка2.png" alt="Третий слайд">
+        <div class="slideText1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-<p><strong>Михаил,</strong> Ген директор ПАО"Газпром".</p><br>
-<img src="img/Оранж.png" alt="Фото"/>
-<img src="img/Оранж копия.png" alt="Фото"/>
-<img src="img/Оранж копия 2.png" alt="Фото"/>
+<p><strong>Анрей,</strong> Ген директор ПАО"Яндекс".</p><br></div></div>
+ 
+
+    <div class="item1">
+        <img src="img/foto2.png" alt="Третий слайд">
+        <div class="slideText1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+<p><strong>Сергей,</strong> Ген директор ПАО"Сбер".</p><br></div>
+    </div>
+
+    <div class="item1">
+        <img src="img/фотка2.png" alt="Третий слайд">
+        <div class="slideText1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+<p><strong>Михаил,</strong> Ген директор ПАО"Газпром".</p><br></div>
+    </div>
+  
+    
 </div>
+<br>
+
+<div class="slider-dots1">
+  <span class="slider-dots_item1" onclick="currentSlide1(1)"></span> 
+    <span class="slider-dots_item1" onclick="currentSlide1(2)"></span> 
+    <span class="slider-dots_item1" onclick="currentSlide1(3)"></span> 
+  
+  
 </div>
-</div>
+ 
 </div>  
-<div class="loader"></div>
+</div>
+<br><br>
+<div id="okno" class="okno">
+  <a href="#wrap_okno" class="okno_area"></a>
+  <div class="okno_body">
+    <div class="okno_content">
+      <a href="#header" class="okno_close">X</a>
+      <div class="okno_img"><img src="img/slide2.jpg" alt=""></div>
+    </div>
+</div>
+</div>
+
+<div id="okno1" class="okno">
+  <a href="#wrap_okno" class="okno_area"></a>
+  <div class="okno_body">
+    <div class="okno_content">
+      <a href="#header" class="okno_close">X</a>
+      <div class="okno_title">Ответ администратора</div>
+      <div class="okno_text">Благодорим за ваше оброщение!</div>
+      
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+<a id = "okno_hr" href="#okno2" class="okno_link">Посмотреть сообщение</a><br><br>
+<div id="okno2" class="okno">
+  <a href="#wrap_okno" class="okno_area"></a>
+  <div class="okno_body">
+    <div class="okno_content">
+      <a href="#header" class="okno_close">X</a>
+      <div class="okno_title">Внимание !<br>Постоянным клиента скитка в 10%</div>
+   </div>
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
 <footer>
 
 
   
   <div class="footter_content">
-  <div class="contact">
+  <div class="contact" id="contakt">
 <h2>МОИ КОНТАКТЫ</h2>
 <img class="cherta" src="img/cherta.png" alt="Фото" /><br>
 <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -285,11 +443,12 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <div class="FORM_FOOTER">
 <h3>ОСТАВТЕ МНЕ СООБЩЕНИЕ </h3>
-<form  action="#" method="post">
+<form  action="#okno1" method="post">
     <input class="pole" type="text" name="NIK" id="nik" value="Имя" tabindex="1"  required />
     <input class="pole" type="email" name="Mail" id="mail" value="Email" tabindex="1" required/><br>
     <textarea cols="40" rows="8" name="textarea" id="textarea" required></textarea><br>
-    <input class="but" type="submit" value="Отправить" />
+   <input class="but" type="submit" value="Отправить" />
+
 </form>
 </div>
 
@@ -332,5 +491,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           </main>
 
+
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/modal_okno.js"></script>
+      
 </body>
 </html>
