@@ -1071,7 +1071,11 @@ margin-left: auto;
 }
 
 }
+.container1 .container_footer .statistic .content_stat .bnf_number{
+	opacity: 0;
 
+	
+}
 
 
 

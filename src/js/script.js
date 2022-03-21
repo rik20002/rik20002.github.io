@@ -255,7 +255,7 @@ $(window).scroll(function() {
 
  var min =0;
   var max = 100;  
-
+   var show = true;
    function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -287,13 +287,30 @@ console.log(j);
  document.getElementById('project').innerHTML = project;
  document.getElementById('medal').innerHTML = medal;
   }
-  },1);  
+  },10);  
 }
 
 
 
-setTimeout(function(){autoSChot();},10000);
 
+var countbox = ".statistic";
+$(window).on("scroll load resize", function () {
+      if (!show) return false;
+        var w_top = $(window).scrollTop(); 
+        var e_top = $(countbox).offset().top; 
+        var w_height = $(window).height();
+        var d_height = $(document).height();
+        var e_height = $(countbox).outerHeight(); 
+        if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+            $('.bnf_number').css('opacity', '1');
+            autoSChot(); 
+            show = false; 
+            
+        }
+    });
+ 
+
+ 
 
 
 
