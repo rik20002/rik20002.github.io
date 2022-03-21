@@ -254,14 +254,36 @@ $(window).scroll(function() {
 });
 
 
-function getRandom(min, max) {
+function autoSChot(){
+  var min =0;
+  var max = 100;  
+  var j=0;
+  setInterval(() => { if (j<=max){
+    showSlides(slideIndex = j);
+    function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
   
- document.getElementById('like').innerHTML = getRandom(0,1000);
- document.getElementById('worki').innerHTML = getRandom(0,1000);
- document.getElementById('project').innerHTML = getRandom(0,1000);
- document.getElementById('medal').innerHTML = getRandom(0,1000);
+ document.getElementById('like').innerHTML = getRandom(min,max);
+ document.getElementById('worki').innerHTML = getRandom(min,max);
+ document.getElementById('project').innerHTML = getRandom(min,max);
+ document.getElementById('medal').innerHTML = getRandom(min,max);
+  j=j+1;}else{j=0;
+
+  
+  }
+  
+  
+  },1000);  
+}
+
+
+
+setTimeout(function(){autoSChot();},10000);
+
+
+
+
 
 /* Индекс слайда по умолчанию */
 var slideIndex = 1;
@@ -326,11 +348,6 @@ function autoPlay(){
   
   
   },5000);  
-    
-    
-  
-  
-  
 }
 
 
