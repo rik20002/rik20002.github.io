@@ -253,28 +253,41 @@ $(window).scroll(function() {
   }
 });
 
-
-function autoSChot(){
-  var min =0;
+ var min =0;
   var max = 100;  
-  var j=0;
-  setInterval(() => { if (j<=max){
-    showSlides(slideIndex = j);
-    function getRandom(min, max) {
+
+   function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
-  
+var like = getRandom(min,max);
+var worki = getRandom(min,max);
+var project = getRandom(min,max);
+var medal = getRandom(min,max);
  document.getElementById('like').innerHTML = getRandom(min,max);
  document.getElementById('worki').innerHTML = getRandom(min,max);
  document.getElementById('project').innerHTML = getRandom(min,max);
  document.getElementById('medal').innerHTML = getRandom(min,max);
-  j=j+1;}else{j=0;
 
-  
+
+
+function autoSChot(){
+
+  var j=0;
+
+  setInterval(() => { if (j<=max){
+    
+j=j+1;
+like =like + 1;
+worki = worki + 1;
+project = project + 1;
+medal = medal+ 1;
+console.log(j);
+ document.getElementById('like').innerHTML = like;
+ document.getElementById('worki').innerHTML = worki;
+ document.getElementById('project').innerHTML = project;
+ document.getElementById('medal').innerHTML = medal;
   }
-  
-  
-  },1000);  
+  },1);  
 }
 
 
